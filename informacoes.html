@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore R - Informações</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Informações sobre a Linguagem R</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="instalacao.html">Instalação</a></li>
+          <li><a href="informacoes.html">Informações sobre R</a></li>
+          <li><a href="programas.html">Programas</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="historia">
+        <h2>História da Linguagem R</h2>
+        <p>
+          R foi criada por Ross Ihaka e Robert Gentleman na Universidade de
+          Auckland nos anos 90, inspirada na linguagem S. Tornou-se uma das
+          principais linguagens para análise estatística e ciência de dados.
+        </p>
+      </section>
+      <section class="sintaxe">
+        <h2>Sintaxe Básica</h2>
+        <p>
+          A sintaxe de R é simples e acessível para iniciantes. Aqui estão
+          alguns exemplos:
+        </p>
+        <ul>
+          <li><strong>Atribuição:</strong> <code>x <- 10</code></li>
+          <li>
+            <strong>Operações matemáticas:</strong> <code>soma <- x + 5</code>
+          </li>
+          <li>
+            <strong>Criação de vetores:</strong>
+            <code>vetor <- c(1, 2, 3, 4, 5)</code>
+          </li>
+          <li>
+            <strong>Funções básicas:</strong> <code>media <- mean(vetor)</code>
+          </li>
+        </ul>
+      </section>
+      <section class="variaveis">
+        <h2>Variáveis em R</h2>
+        <p>Variáveis em R armazenam dados. Exemplos de tipos comuns incluem:</p>
+        <ul>
+          <li><strong>Números:</strong> <code>x <- 42</code></li>
+          <li><strong>Texto:</strong> <code>nome <- "R Programming"</code></li>
+          <li>
+            <strong>Vetores:</strong> <code>vetor <- c(1, 2, 3, 4, 5)</code>
+          </li>
+          <li>
+            <strong>Matrizes:</strong>
+            <code>matriz <- matrix(1:9, nrow=3)</code>
+          </li>
+          <li>
+            <strong>Data Frames:</strong>
+            <code>dados <- data.frame(x = 1:5, y = 6:10)</code>
+          </li>
+        </ul>
+      </section>
+      <section class="funcoes">
+        <h2>Funções</h2>
+        <p>
+          Funções em R ajudam a modularizar e reutilizar código. Um exemplo
+          básico de função:
+        </p>
+        <pre><code>minha_funcao <- function(a, b) {
+    resultado <- a + b
+    return(resultado)
+}</code></pre>
+        <p>Chamada de função: <code>minha_funcao(3, 4)</code></p>
+        <section class="estruturas">
+            <h2>Estruturas de Controle</h2>
+            <p>
+              R suporta estruturas de controle como condicionais e loops. Exemplos:
+            </p>
+            <ul>
+              <li>
+                <strong>Condicional if:</strong>
+                <code>if (x > 0) { print("Positivo") }</code>
+              </li>
+              <li>
+                <strong>Loop for:</strong> <code>for (i in 1:5) { print(i) }</code>
+              </li>
+              <li>
+                <strong>Loop while:</strong>
+                <code>while (x < 10) { x <- x + 1 }</code>
+              </li>
+            </ul>
+          </section>
+          <section class="video">
+            <h2>Vídeo Explicativo</h2>
+            <p>Assista ao vídeo abaixo para uma introdução visual à linguagem R:</p>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </section>
+    </section>
+    </main>
+  </body>
+</html>

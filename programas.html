@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas em R</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Programas em R</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="instalacao.html">Instalação</a></li>
+                    <li><a href="informacoes.html">Informações sobre R</a></li>
+                    <li><a href="programas.html">Programas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="exemplos">
+            <h2>Exemplo de Programa em R</h2>
+            <p>A seguir, apresentamos um exemplo de programa em R que calcula o fatorial de um número e uma aproximação do número de Euler usando a série de Taylor.</p>
+            <h3>Programa: Cálculo de Fatorial e Número de Euler</h3>
+            <pre><code class="language-r"># Função para calcular o fatorial
+fatorial <- function(n) {
+  if (n == 0) {
+    return(1)
+  } else {
+    return(n * fatorial(n - 1))
+  }
+}
+
+# Função para calcular o número de Euler usando a série de Taylor
+calcular_euler <- function(n) {
+  euler <- 1
+  for (i in 1:n) {
+    euler <- euler + 1 / fatorial(i)
+  }
+  return(euler)
+}
+
+# Testando as funções
+numero <- 5
+cat("O fatorial de", numero, "é", fatorial(numero), "\n")
+cat("A aproximação do número de Euler usando", numero, "termos é", calcular_euler(numero), "\n")</code></pre>
+
+<section class="video-tutorial">
+    <h2>Vídeo</h2>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SeuLinkDoVideoAqui" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+</section>
+    </main>
+</body>
+</html>
